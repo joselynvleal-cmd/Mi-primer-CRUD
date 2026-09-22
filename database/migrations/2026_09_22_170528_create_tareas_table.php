@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('titulo');
             $table->text('descripcion')->nullable();
             $table->boolean('completada')->default(false);
+            $table->date('fecha_limite')->nullable();
             $table->timestamps();
         });
     }
